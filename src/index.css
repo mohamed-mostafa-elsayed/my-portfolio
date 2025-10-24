@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #5729CE;
+  --secondary: #0FB3D5;
+  --accent: #E183EA;
+
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary)] via-[var(--secondary)] to-[var(--accent)];
+    
+  }
+  
+}
+
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+
+  body {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url("/home/mohammed/Desktop/important-web-app/my-portfolio/src/assets/images/hero-bg.jpg");
+}
+  
+}
+
