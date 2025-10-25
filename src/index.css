@@ -1,29 +1,75 @@
 @import "tailwindcss";
 
 :root {
+  --background: 240 10% 3.9%;
+
   --primary: #5729CE;
   --secondary: #0FB3D5;
   --accent: #E183EA;
+
+
+  --foreground: 0 0% 98%;
+
+  --card: 240 10% 8%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 240 10% 8%;
+  --popover-foreground: 0 0% 98%;
+
+  
+  --primary-foreground: 0 0% 100%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 240 5% 26%;
+  --muted-foreground: 240 5% 65%;
+
+  --accent-foreground: 240 10% 3.9%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 240 10% 20%;
+  --input: 240 10% 20%;
+  --ring: 263 70% 50%;
+
+  --radius: 1rem;
+
+  /* Custom portfolio colors */
+  --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%), hsl(189 94% 43%));
+  --gradient-accent: linear-gradient(135deg, hsl(300 76% 72%), hsl(263 70% 50%));
+  --gradient-overlay: linear-gradient(180deg, hsl(240 10% 3.9% / 0.8), hsl(240 10% 3.9%));
+
+  /* Glass morphism */
+  --glass-bg: hsl(240 10% 8% / 0.6);
+  --glass-border: hsl(0 0% 100% / 0.1);
+
+  /* Shadows */
+  --shadow-glow: 0 0 40px hsl(263 70% 50% / 0.3);
+  --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
 
 }
 
 @layer utilities {
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary)] via-[var(--secondary)] to-[var(--accent)];
-    
+
+  }
+
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-card);
   }
   
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
 }
 
 @layer base {
-  /* * {
-    @apply border-border;
-  } */
-
   body {
-  @apply bg-cover bg-center bg-no-repeat;
-  background-image: url("/home/mohammed/Desktop/important-web-app/my-portfolio/src/assets/images/hero-bg.jpg");
+    background-color: hsl(var(--background));
+  }
 }
-  
-}
-
