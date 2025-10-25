@@ -1,4 +1,5 @@
 import React from "react";
+import { personalInfo } from "@/data/portfolio";
 
 export default function Home() {
     return(
@@ -7,17 +8,17 @@ export default function Home() {
             <div
             className={" text-neutral-50 text-4xl md:text-6xl lg:text-7xl font-bold "}
             >
-                Hi, I'm <span className={"gradient-text"}>Mohammed Mostafa</span>
+                Hi, I'm <span className={"gradient-text"}>{personalInfo.name}</span>
             </div>
 
             <div className={"text-3xl md:text-4xl lg:text-6xl text-neutral-200"}
             >
-               Full Stack Developer
+               {personalInfo.title}
             </div>
 
-            <div className={" text-3xl text-center text-neutral-400"}
+            <div className={" text-3xl text-center text-neutral-400 w-[40ch] md:w-[50ch] lg:w-[60ch]"}
             >
-                Building beautiful digital experiences with modern web technologies
+                {personalInfo.bio}
             </div>
 
             <div className={" flex justify-center gap-7 md:gap-15 w-full"}>
@@ -27,7 +28,7 @@ export default function Home() {
                     View My Work
                 </button>
 
-                <button className={"cursor-pointer transition-all duration-300 hover:bg-[var(--accent)] h-15 text-lg px-8 md:text-xl md:px-10  bg-black text-neutral-50 font-bold rounded-2xl"}>
+                <button className={"cursor-pointer transition-all duration-300 hover:bg-[var(--accent)] h-15 text-lg px-8 md:text-xl md:px-10  bg-black text-neutral-50 font-bold rounded-2xl border border-neutral-400"}>
                     Get In Touch
                 </button>
             </div>

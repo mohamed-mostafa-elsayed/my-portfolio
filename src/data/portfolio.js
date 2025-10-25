@@ -1,9 +1,9 @@
 export const personalInfo = {
-  name: "Your Name",
+  name: "Mohammed Mostafa",
   title: "Full Stack Developer",
-  email: "your.email@example.com",
-  phone: "+1 (555) 123-4567",
-  location: "City, Country",
+  email: "mohammed.mostafa.elsied@gmail.com",
+  phone: "+201097210066",
+  location: "Cairo, Egypt",
   bio: "Passionate developer with expertise in modern web technologies. I love creating efficient, scalable, and user-friendly applications.",
   social: {
     github: "https://github.com/yourusername",

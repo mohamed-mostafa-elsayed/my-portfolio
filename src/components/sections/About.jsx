@@ -1,5 +1,6 @@
 import React from "react";
 import { Code2, Palette, Rocket } from "lucide-react";
+import { Element } from "react-scroll";
 
 export default function About() {
 
@@ -22,7 +23,9 @@ export default function About() {
     ];
 
     return (
-        <div className={" flex flex-col justify-center items-center mt-40 space-y-10 "}>
+        <Element
+        name={"#about"}
+        className={" flex flex-col justify-center items-center mt-40 space-y-10 "}>
 
             <div className={" text-neutral-50 text-4xl md:text-6xl lg:text-7xl font-bold mt-96 "}>
                 about <span className={"gradient-text"} >me</span>
@@ -57,6 +60,6 @@ export default function About() {
                 ))}
             </div>
 
-        </div>
+        </Element>
     );
 };
