@@ -8,25 +8,61 @@ export const personalInfo = {
   location: "Cairo, Egypt",
   bio: "Passionate developer with expertise in modern web technologies. I love creating efficient, scalable, and user-friendly applications.",
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
-    portfolio: "https://yourportfolio.com"
+    github: "https://github.com/mohamed-mostafa-elsayed",
+    linkedin: "https://www.linkedin.com/in/mohammed-mostafa-elsayed/",
+    twitter: "https://x.com/mohammed_a2z",
+    portfolio: "https://yourportfolio.com",
+    whatsApp: "https://wa.link/9r1ww1"
   }
 };
 
 export const skills = [
   {
     category: "Frontend",
-    technologies: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js"]
+    technologies: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Vite",
+      "Redux Toolkit",
+      "Storybook",
+      "Responsive Design",
+      "RESTful APIs",
+      "JSON",
+      "Figma",
+    ],
   },
   {
     category: "Backend",
-    technologies: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"]
+    technologies: [
+      "Django",
+      "Spring Boot",
+      "RESTful API Development",
+      "MVC Architecture",
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "Database Design",
+      "ORM (Hibernate, Django ORM, Sequelize)",
+      "JWT Authentication",
+      "Spring Security",
+      "User Roles & Permissions",
+      "CSRF/XSS Protection",
+    ],
   },
   {
     category: "Tools & Others",
-    technologies: ["Git", "Docker", "AWS", "Figma", "Jest", "Webpack", "Vite"]
+    technologies: [
+      "Docker",
+      "Git & GitHub",
+      "Postman",
+      "Nginx",
+      "Linux Server Management",
+      "CI/CD Basics",
+    ],
   }
 ];
 
@@ -70,51 +106,58 @@ export const navItems = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online shopping platform with cart, payments, and admin dashboard",
-    tags: ["React", "Node.js", "MongoDB"],
+    visiable:true,
+    title: "Move App",
+    description: "A simple web app to browse and discover movies with details like ratings, genres, and posters",
+    tags: ["React", "Bootstrap"],
     gradient: "from-[var(--primary)] to-[var(--secondary)]",
-    hrefDemo: "https://www.google.com",
-    hrefGitHub: "https://www.google.com",
+    hrefDemo: "https://react-project-self.vercel.app/",
+    hrefGitHub: "https://github.com/mohamed-mostafa-elsayed/movie-app",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task manager with real-time updates and team features",
-    tags: ["React", "Firebase", "Tailwind"],
+    visiable:false,
+    title: "Cofee Center",
+    description: "A modern app for browsing, ordering, and enjoying your favorite coffee selections",
+    tags: ["React", "Bootstrap", "Django", "PostgreSQL"],
     gradient: "from-[var(--secondary)] to-[var(--accent)]",
-     hrefDemo: "https://www.google.com",
-    hrefGitHub: "https://www.google.com",
+    hrefDemo: "",
+    hrefGitHub: "https://github.com/mohamed-mostafa-elsayed/coffee-center-frontend",
   },
   {
-    title: "Portfolio Generator",
-    description: "Tool to create beautiful portfolio websites with customizable templates",
-    tags: ["React", "TypeScript", "CSS"],
+    visiable:false,
+    title: "TV OS",
+    description: "A smart TV operating system for managing channels, apps, and live content seamlessly",
+    tags: ["React", "RDK"],
     gradient: "from-[var(--accent)] to-[var(--primary)]",
-     hrefDemo: "https://www.google.com",
-    hrefGitHub: "https://www.google.com",
+    hrefDemo: "https://www.linkedin.com/company/ooro-os/posts/?feedView=all",
+    hrefGitHub: "",
+  },
+
+  {
+    visiable:false,
+    title: "Mini Shell",
+    description: "A lightweight command-line shell that executes basic Linux commands efficiently",
+    tags: ["React", "RDK"],
+    gradient: "from-[var(--accent)] to-[var(--primary)]",
+    hrefDemo: "",
+    hrefGitHub: "https://github.com/mohamed-mostafa-elsayed/simple_shell",
   },
   {
+    visiable:false,
     title: "Weather Dashboard",
     description: "Beautiful weather app with forecasts, maps, and location-based data",
     tags: ["React", "API", "Charts"],
     gradient: "from-[var(--primary)] via-[var(--accent)] to-[var(--secondary)]",
-     hrefDemo: "https://www.google.com",
+    hrefDemo: "https://www.google.com",
     hrefGitHub: "https://www.google.com",
   },
   {
+    visiable:false,
     title: "Social Media App",
     description: "Modern social platform with posts, comments, and real-time messaging",
     tags: ["React", "GraphQL", "PostgreSQL"],
     gradient: "from-[var(--secondary)] to-[var(--primary)]",
-     hrefDemo: "https://www.google.com",
-    hrefGitHub: "https://www.google.com",
-  },
-  {
-    title: "Fitness Tracker",
-    description: "Track workouts, nutrition, and progress with beautiful analytics",
-    tags: ["React", "Charts", "PWA"],
-    gradient: "from-[var(--accent)] via-[var(--primary)] to-[var(--secondary)]",
-     hrefDemo: "https://www.google.com",
+    hrefDemo: "https://www.google.com",
     hrefGitHub: "https://www.google.com",
   },
 ];

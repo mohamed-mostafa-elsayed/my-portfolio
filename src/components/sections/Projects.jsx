@@ -21,7 +21,7 @@ export default function Projects() {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="glass-card rounded-2xl p-6 hover:scale-105 transition-all duration-300 group animate-slide-up"
+                            className="glass-card rounded-2xl p-6 hover:scale-105 hover:glow-effect transition-all duration-300 group animate-slide-up"
                         >
                             <div className={`h-2 w-16 rounded-full bg-gradient-to-r ${project.gradient} mb-6 group-hover:w-full transition-all duration-500`}></div>
 
@@ -41,7 +41,7 @@ export default function Projects() {
                                 ))}
                             </div>
 
-                            <div className="flex justify-around">
+                            {project.visiable && <div className="flex justify-around">
                                 <a
                                     href={project.hrefGitHub}
                                     target="_blank"
@@ -80,7 +80,7 @@ export default function Projects() {
                                 </a>
 
 
-                            </div>
+                            </div>}
 
                         </div>
                     ))}

@@ -50,7 +50,7 @@ export default function About() {
                 {features.map((feature, index) => (
                     <div
                         key={index}
-                        className="p-8 md:p-12 glass-card rounded-2xl hover:scale-105 transition-transform duration-300 animate-slide-up"
+                        className="p-8 md:p-12 glass-card rounded-2xl hover:scale-105 hover:glow-effect transition-transform duration-300 animate-slide-up"
                         style={{ animationDelay: `${index * 0.1}s` }}
                     >
                         <feature.icon className=" w-16 h-16 text-[var(--primary)] mb-4" />
