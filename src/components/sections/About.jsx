@@ -28,7 +28,7 @@ export default function About() {
         className={" flex flex-col justify-center items-center mt-40 space-y-10 "}>
 
             <div className={" text-neutral-50 text-4xl md:text-6xl lg:text-7xl font-bold mt-96 "}>
-                about <span className={"gradient-text"} >me</span>
+                abo <span className={"gradient-text"} >me</span>
             </div>
 
             <div className={"text-neutral-100 text-2xl md:text-3xl text-center"} >

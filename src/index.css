@@ -71,6 +71,7 @@
 
 @layer base {
   body {
+    @apply overflow-x-hidden;
     background-color: hsl(var(--background));
   }
 }
