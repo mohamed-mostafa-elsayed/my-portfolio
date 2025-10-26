@@ -9,11 +9,11 @@ export default function Projects() {
         <Element name="#projects" className="py-20 px-4 bg-card/30 w-full h-full">
             <div className="w-[70%] mx-auto">
 
-                <div className="text-4xl md:text-6xl font-bold text-center mb-4 text-neutral-100">
+                <div className="text-3xl md:text-6xl font-bold text-center mb-4 text-neutral-100">
                     Featured <span className="gradient-text">Projects</span>
                 </div>
 
-                <p className="text-center text-neutral-200 mb-16 max-w-2xl mx-auto text-2xl">
+                <p className="text-center text-neutral-200 mb-16 max-w-2xl mx-auto text-lg md:text-3xl">
                     Some of my recent work and side projects
                 </p>
 
@@ -25,8 +25,8 @@ export default function Projects() {
                         >
                             <div className={`h-2 w-16 rounded-full bg-gradient-to-r ${project.gradient} mb-6 group-hover:w-full transition-all duration-500`}></div>
 
-                            <h3 className="text-2xl font-semibold mb-3 text-neutral-100">{project.title}</h3>
-                            <p className="text-xl mb-4 leading-relaxed text-neutral-200">
+                            <h3 className=" text-xl md:text-2xl font-semibold mb-3 text-neutral-100">{project.title}</h3>
+                            <p className=" text-lg md:text-xl mb-4 leading-relaxed text-neutral-200">
                                 {project.description}
                             </p>
 
@@ -51,8 +51,8 @@ export default function Projects() {
                                         border border-neutral-400 rounded-2xl
                                         cursor-pointer 
                                         transition-all duration-300 hover:bg-[var(--accent)] 
-                                        h-12 text-lg px-3 py-2
-                                        lg:text-xl lg:px-8 lg:py-2`}
+                                        h-12 px-3 py-2 text-sm
+                                        lg:text-lg lg:px-8 lg:py-2`}
                                 >
                                     <button className={`flex items-center justify-center lg:gap-3`}>
                                         <Github className="w-6 h-6 md:w-5 md:h-5" />
@@ -69,8 +69,8 @@ export default function Projects() {
                                         bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-neutral-50
                                         cursor-pointer rounded-2xl font-bold
                                         transition-all duration-300 hover:brightness-75 
-                                        h-12 text-lg px-3 py-2
-                                        lg:text-xl lg:px-8 lg:py-2 `}
+                                        h-12 px-3 py-2 text-xs
+                                        lg:text-l lg:px-8 lg:py-2 `}
 
                                 >
                                     <button className={`flex items-center justify-center lg:gap-3`}>

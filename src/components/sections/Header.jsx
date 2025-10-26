@@ -28,8 +28,8 @@ const Header = () => {
           isScrolled ? "glass-card shadow-lg " : "bg-transparent"
         }`}>
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-around h-16">
-            <div className="text-4xl font-bold gradient-text">Portfolio</div>
+          <div className="flex items-center justify-center gap-30  md:justify-around h-16 ">
+            <div className="text-2xl md:text-4xl font-bold gradient-text">Portfolio</div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8 font-bold">

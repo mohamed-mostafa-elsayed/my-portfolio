@@ -7,10 +7,10 @@ export default function Skills() {
         <Element name={"#skills"}>
             <div className="py-20 px-4 text-neutral-300">
 
-                <h2 className="text-4xl md:text-6xl font-bold text-center mb-4 text-neutral-100">
+                <h2 className="text-3xl md:text-6xl font-bold text-center mb-4 text-neutral-100">
                     Skills & <span className="gradient-text">Technologies</span>
                 </h2>
-                <p className="text-center text-neutral-200 mb-16 max-w-2xl mx-auto text-2xl">
+                <p className="text-center text-neutral-200 mb-16 max-w-2xl mx-auto text-lg md:text-3xl">
                     Technologies I work with to bring ideas to life
                 </p>
 
@@ -23,7 +23,7 @@ export default function Skills() {
                                 {group.technologies.map((tech, techIndex) => (
                                     <div
                                         key={techIndex}
-                                        className={`text-2xl cursor-default 
+                                        className={`text-lg md:text-2xl cursor-default 
                                             glass-card hover:glow-effect
                                             px-6 py-3 rounded-full 
                                             transition-all duration-300 animate-slide-up`}

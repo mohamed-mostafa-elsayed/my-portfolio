@@ -25,16 +25,16 @@ export default function About() {
     return (
         <Element
         name={"#about"}
-        className={" flex flex-col justify-center items-center mt-40 space-y-10 "}>
+        className={" flex flex-col justify-center items-center space-y-10 "}>
 
-            <div className={" text-neutral-50 text-4xl md:text-6xl lg:text-7xl font-bold mt-96 "}>
-                abo <span className={"gradient-text"} >me</span>
+            <div className={" text-neutral-50 text-3xl md:text-6xl lg:text-7xl font-bold mt-96 "}>
+                about <span className={"gradient-text"} >me</span>
             </div>
 
-            <div className={"text-neutral-100 text-2xl md:text-3xl text-center"} >
+            <div className={"text-neutral-100 text-lg md:text-3xl text-center"} >
                 Passionate about creating exceptional digital experiences</div>
 
-            <div className={"glass-card rounded-3xl mb-12 animate-slide-up text-2xl text-neutral-200 text-center p-8 md:p-12 w-[70%]"}>
+            <div className={"glass-card rounded-3xl mb-12 animate-slide-up text-xl text-neutral-200 text-center p-8 md:p-12 w-[70%]"}>
 
                 <p className="mb-10">
                     I'm a creative developer with a passion for building beautiful and functional web applications. With expertise in modern technologies and a keen eye for design, I bring ideas to life through code.
@@ -54,8 +54,8 @@ export default function About() {
                         style={{ animationDelay: `${index * 0.1}s` }}
                     >
                         <feature.icon className=" w-16 h-16 text-[var(--primary)] mb-4" />
-                        <h3 className="text-2xl font-semibold mb-2 text-neutral-100">{feature.title}</h3>
-                        <p className="text-xl text-neutral-200">{feature.description}</p>
+                        <h3 className="text-xl md:text-2xl font-semibold mb-2 text-neutral-100">{feature.title}</h3>
+                        <p className="text-lg md:text-xl text-neutral-200">{feature.description}</p>
                     </div>
                 ))}
             </div>
