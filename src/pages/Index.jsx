@@ -2,7 +2,8 @@ import React from "react";
 import Header from "@/components/sections/Header";
 import Home from "@/components/sections/Home";
 import About from "@/components/sections/About";
-import Project from "@/components/sections/Project";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
 
 export default function Index () {
     return(
@@ -14,7 +15,8 @@ export default function Index () {
                 <main className="pt-16">
                     <Home />
                     <About />
-                    <Project />
+                    <Projects />
+                    <Skills />
                 </main>
             </div>
 

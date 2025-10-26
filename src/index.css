@@ -61,8 +61,9 @@
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow-card);
   }
-  
-  .glow-effect {
+
+  .hover\:glow-effect:hover {
+    @apply scale-110;
     box-shadow: var(--shadow-glow);
   }
 

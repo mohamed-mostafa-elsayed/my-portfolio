@@ -1,3 +1,5 @@
+import { href } from "react-router-dom";
+
 export const personalInfo = {
   name: "Mohammed Mostafa",
   title: "Full Stack Developer",
@@ -16,7 +18,7 @@ export const personalInfo = {
 export const skills = [
   {
     category: "Frontend",
-    technologies: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js"]
+    technologies: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js"]
   },
   {
     category: "Backend",
@@ -28,38 +30,6 @@ export const skills = [
   }
 ];
 
-export const projects = [
-  {
-    id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React frontend and Node.js backend",
-    image: "/images/project1.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "https://project1.com",
-    githubUrl: "https://github.com/yourusername/project1",
-    featured: true
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates",
-    image: "/images/project2.jpg",
-    technologies: ["React", "Firebase", "Material-UI"],
-    liveUrl: "https://project2.com",
-    githubUrl: "https://github.com/yourusername/project2",
-    featured: true
-  },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    description: "A responsive weather dashboard with location-based forecasts",
-    image: "/images/project3.jpg",
-    technologies: ["JavaScript", "API Integration", "Chart.js"],
-    liveUrl: "https://project3.com",
-    githubUrl: "https://github.com/yourusername/project3",
-    featured: false
-  }
-];
 
 export const experience = [
   {
@@ -88,4 +58,63 @@ export const education = [
     duration: "2016 - 2020",
     description: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems"
   }
+];
+
+export const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const projects = [
+  {
+    title: "E-Commerce Platform",
+    description: "A full-featured online shopping platform with cart, payments, and admin dashboard",
+    tags: ["React", "Node.js", "MongoDB"],
+    gradient: "from-[var(--primary)] to-[var(--secondary)]",
+    hrefDemo: "https://www.google.com",
+    hrefGitHub: "https://www.google.com",
+  },
+  {
+    title: "Task Management App",
+    description: "Collaborative task manager with real-time updates and team features",
+    tags: ["React", "Firebase", "Tailwind"],
+    gradient: "from-[var(--secondary)] to-[var(--accent)]",
+     hrefDemo: "https://www.google.com",
+    hrefGitHub: "https://www.google.com",
+  },
+  {
+    title: "Portfolio Generator",
+    description: "Tool to create beautiful portfolio websites with customizable templates",
+    tags: ["React", "TypeScript", "CSS"],
+    gradient: "from-[var(--accent)] to-[var(--primary)]",
+     hrefDemo: "https://www.google.com",
+    hrefGitHub: "https://www.google.com",
+  },
+  {
+    title: "Weather Dashboard",
+    description: "Beautiful weather app with forecasts, maps, and location-based data",
+    tags: ["React", "API", "Charts"],
+    gradient: "from-[var(--primary)] via-[var(--accent)] to-[var(--secondary)]",
+     hrefDemo: "https://www.google.com",
+    hrefGitHub: "https://www.google.com",
+  },
+  {
+    title: "Social Media App",
+    description: "Modern social platform with posts, comments, and real-time messaging",
+    tags: ["React", "GraphQL", "PostgreSQL"],
+    gradient: "from-[var(--secondary)] to-[var(--primary)]",
+     hrefDemo: "https://www.google.com",
+    hrefGitHub: "https://www.google.com",
+  },
+  {
+    title: "Fitness Tracker",
+    description: "Track workouts, nutrition, and progress with beautiful analytics",
+    tags: ["React", "Charts", "PWA"],
+    gradient: "from-[var(--accent)] via-[var(--primary)] to-[var(--secondary)]",
+     hrefDemo: "https://www.google.com",
+    hrefGitHub: "https://www.google.com",
+  },
 ];

@@ -2,18 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Overlay from '../ui/Overlay';
 import MobileButton from '../ui/MobileButton';
 import { Link, Element } from 'react-scroll';
+import {navItems} from "@/data/portfolio";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Skills", href: "#skills" },
-    { label: "Contact", href: "#contact" },
-  ];
 
   const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
